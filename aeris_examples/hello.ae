@@ -1,0 +1,14 @@
+module demo.hello;
+
+effect io;
+cap Console;
+
+fn greet(name: Text) -> Text !pure {
+    "Hello, " + name
+}
+
+fn main(console: Console) -> Int !io {
+    let message = greet("AERIS");
+    print(console, message);
+    0
+}

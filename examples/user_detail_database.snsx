@@ -1,0 +1,42 @@
+bring <module/std.io> as io
+bring <module/std.db> as db
+
+flow database_path
+    gives String
+    "data/user_detail.snsxdb"
+
+flow build_record
+    takes name: String, mobile: String, email: String
+    gives String
+    "name=" + sanitize(name) + "|mobile=" + sanitize(mobile) + "|email=" + sanitize(email)
+
+entry
+    show "User Detail Database"
+    show "Enter name:"
+    hold name = ask()
+    show "Enter mobile number:"
+    hold mobile = ask()
+    show "Enter email address:"
+    hold email = ask()
+
+    gate name == "":
+        show "Please enter the name."
+    otherwise:
+        gate mobile == "":
+            show "Please enter the mobile number."
+        otherwise:
+            gate is_digits(mobile):
+                gate email == "":
+                    show "Please enter the email address."
+                otherwise:
+                    gate is_email(email):
+                        hold record = build_record(name, mobile, email)
+                        hold saved_to = append_text(database_path(), record + "\n")
+                        show "Record saved to:"
+                        show saved_to
+                    otherwise:
+                        show "Please enter a valid email address."
+            otherwise:
+                show "Please enter a valid mobile number using digits only."
+
+    0

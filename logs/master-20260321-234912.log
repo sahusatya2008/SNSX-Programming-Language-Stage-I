@@ -1,0 +1,31 @@
+[master] master runner started
+[master] master runner started
+[master] workspace: /Users/drhacker/Documents/Programming Lang
+[master] workspace: /Users/drhacker/Documents/Programming Lang
+[master] language: aeris
+[master] language: aeris
+[master] mode: run
+[master] mode: check
+[master] project: /Users/drhacker/Documents/Programming Lang/aeris_workspace
+[master] project: /Users/drhacker/Documents/Programming Lang/aeris_workspace
+[master] log file: /Users/drhacker/Documents/Programming Lang/logs/master-20260321-234912.log
+[master] log file: /Users/drhacker/Documents/Programming Lang/logs/master-20260321-234912.log
+[master] running: cargo check --offline
+[master] running: cargo check --offline
+    Blocking waiting for file lock on build directory
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.26s
+[master] running: cargo build -p aeris_cli --offline
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.28s
+[master] running: cargo build -p aeris_cli --offline
+    Blocking waiting for file lock on build directory
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
+[master] launching AERIS system in check mode
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/aeris check --file aeris_examples/refinement.ae
+[master] launching AERIS system in run mode
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/aeris run --file aeris_examples/hello.ae
+Hello, AERIS
+exit: 0
+AERIS check passed: 2 function(s), 0 actor(s), 0 type(s)
+[master] master runner finished
+[master] master runner finished

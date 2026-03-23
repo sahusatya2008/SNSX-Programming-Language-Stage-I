@@ -1,0 +1,13 @@
+module stage1.compiler.lexer;
+
+effect pure;
+
+type ScanState = ScanState(offset: Int, line: Int, column: Int);
+
+fn initial_offset() -> Int !pure {
+    0
+}
+
+fn bump(offset: Int) -> Int !pure {
+    offset + 1
+}

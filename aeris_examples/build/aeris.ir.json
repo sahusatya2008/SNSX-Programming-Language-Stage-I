@@ -1,0 +1,95 @@
+{
+  "functions": [
+    {
+      "name": "greet",
+      "effect": "pure",
+      "params": [
+        "name"
+      ],
+      "blocks": [
+        {
+          "label": "entry",
+          "instructions": [
+            {
+              "Param": {
+                "dst": "%0",
+                "name": "name"
+              }
+            },
+            {
+              "ConstText": {
+                "dst": "%1",
+                "value": "Hello, "
+              }
+            },
+            {
+              "Binary": {
+                "dst": "%2",
+                "op": "add",
+                "left": "%1",
+                "right": "%0"
+              }
+            }
+          ],
+          "terminator": {
+            "Return": "%2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "main",
+      "effect": "io",
+      "params": [
+        "console"
+      ],
+      "blocks": [
+        {
+          "label": "entry",
+          "instructions": [
+            {
+              "Param": {
+                "dst": "%0",
+                "name": "console"
+              }
+            },
+            {
+              "ConstText": {
+                "dst": "%1",
+                "value": "AERIS"
+              }
+            },
+            {
+              "Call": {
+                "dst": "%2",
+                "callee": "greet",
+                "args": [
+                  "%1"
+                ]
+              }
+            },
+            {
+              "Call": {
+                "dst": "%3",
+                "callee": "print",
+                "args": [
+                  "%0",
+                  "%2"
+                ]
+              }
+            },
+            {
+              "ConstInt": {
+                "dst": "%4",
+                "value": 0
+              }
+            }
+          ],
+          "terminator": {
+            "Return": "%4"
+          }
+        }
+      ]
+    }
+  ]
+}

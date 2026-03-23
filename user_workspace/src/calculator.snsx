@@ -1,0 +1,63 @@
+bring <module/std.io> as io
+
+flow add_values
+    takes left: Int, right: Int
+    gives Int
+    left + right
+
+flow subtract_values
+    takes left: Int, right: Int
+    gives Int
+    left - right
+
+flow multiply_values
+    takes left: Int, right: Int
+    gives Int
+    left * right
+
+flow divide_values
+    takes left: Int, right: Int
+    gives Int
+    left / right
+
+entry
+    show "Enter first number:"
+    hold raw_left = ask()
+    show "Enter second number:"
+    hold raw_right = ask()
+    show "Choose operation (+, -, *, /):"
+    hold op = ask()
+
+    gate raw_left == "":
+        show "Please enter the first number."
+    otherwise:
+        gate raw_right == "":
+            show "Please enter the second number."
+        otherwise:
+            gate is_int(raw_left):
+                gate is_int(raw_right):
+                    hold left = int(raw_left)
+                    hold right = int(raw_right)
+
+                    gate op == "+":
+                        show sanitize(add_values(left, right))
+                    otherwise:
+                        gate op == "-":
+                            show sanitize(subtract_values(left, right))
+                        otherwise:
+                            gate op == "*":
+                                show sanitize(multiply_values(left, right))
+                            otherwise:
+                                gate op == "/":
+                                    gate right == 0:
+                                        show "Cannot divide by zero."
+                                    otherwise:
+                                        show sanitize(divide_values(left, right))
+                                otherwise:
+                                    show "Please choose one of +, -, *, /."
+                otherwise:
+                    show "Please enter a valid second number."
+            otherwise:
+                show "Please enter a valid first number."
+
+    0

@@ -1,0 +1,12 @@
+module std.io.console;
+
+effect io;
+cap Console;
+
+fn write_line(console: Console, text: Text) -> Unit !io {
+    print(console, text);
+}
+
+fn read_text(console: Console) -> Text !io {
+    read_line(console)
+}

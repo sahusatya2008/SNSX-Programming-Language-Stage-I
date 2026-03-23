@@ -1,0 +1,24 @@
+bring <module/std.io> as io
+bring <module/std.ai> as ai
+
+mind summarize
+    takes text: String
+    gives String
+    from "Summarize the input text in one sentence"
+
+flow mood
+    takes score: Int
+    gives String
+    pick score
+        case 0
+            give "cold"
+        case 1
+            give "warm"
+        else
+            give "electric"
+
+entry
+    hold title = "SNSX is its own language."
+    title |> summarize |> show
+    show mood(2)
+    0

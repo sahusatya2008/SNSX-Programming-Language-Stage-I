@@ -1,0 +1,6 @@
+bring <module/std.io> as io
+
+entry
+    hold name = ask()
+    show "hello " + name
+    0

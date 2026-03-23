@@ -1,0 +1,10 @@
+bring <module/std.io> as io
+
+flow describe_request
+    gives String
+    "write a simple calculator"
+
+entry
+    show "write a simple calculator"
+    show describe_request()
+    0

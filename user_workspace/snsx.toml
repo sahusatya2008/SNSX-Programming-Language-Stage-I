@@ -1,0 +1,13 @@
+[dependencies]
+std = "builtin"
+"std.io" = "builtin"
+
+[package]
+entry = "src/agent_output.snsx"
+name = "/Users/drhacker/Documents/Programming Lang/user_workspace"
+version = "0.1.0"
+
+[permissions]
+ai = true
+fs = true
+net = false

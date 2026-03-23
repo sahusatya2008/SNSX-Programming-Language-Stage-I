@@ -1,0 +1,10 @@
+[package]
+name = "snsx-distributed-engine"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde.workspace = true
+snsx-network-stack = { path = "../network_stack" }
+snsx-runtime = { path = "../runtime" }
+

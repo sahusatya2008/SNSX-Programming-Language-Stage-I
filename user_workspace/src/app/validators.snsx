@@ -1,0 +1,34 @@
+flow name_missing
+    takes name: String
+    gives Bool
+    name == ""
+
+flow mobile_missing
+    takes mobile: String
+    gives Bool
+    mobile == ""
+
+flow mobile_digits
+    takes mobile: String
+    gives Bool
+    is_digits(mobile)
+
+flow email_missing
+    takes email: String
+    gives Bool
+    email == ""
+
+flow email_valid
+    takes email: String
+    gives Bool
+    is_email(email)
+
+flow password_missing
+    takes password: String
+    gives Bool
+    password == ""
+
+flow password_long_enough
+    takes password: String
+    gives Bool
+    len(password) >= 6

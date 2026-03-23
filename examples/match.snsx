@@ -1,0 +1,14 @@
+flow classify
+    takes x: Int
+    gives Int
+    pick x
+        case 0
+            show "zero"
+        case 1
+            show "one"
+        else
+            show "many"
+    x
+
+entry
+    classify(3)

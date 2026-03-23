@@ -1,0 +1,17 @@
+module stage1.compiler.token;
+
+effect pure;
+
+type TokenKind = Ident | IntLit | TextLit | Keyword | Symbol | Eof;
+type Token = Token(kind: TokenKind, start: Int, end: Int);
+
+fn is_terminal(kind: TokenKind) -> Bool !pure {
+    match kind {
+        Eof() => {
+            true
+        },
+        _ => {
+            false
+        }
+    }
+}

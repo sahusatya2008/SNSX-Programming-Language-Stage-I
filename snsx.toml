@@ -1,0 +1,13 @@
+[package]
+name = "snsx_project"
+version = "0.1.0"
+entry = "src/main.snsx"
+
+[permissions]
+fs = false
+net = false
+ai = false
+
+[dependencies]
+std = "builtin"
+"std.io" = "builtin"

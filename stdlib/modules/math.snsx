@@ -1,0 +1,6 @@
+flow sum(values: Array[Int]) -> Int:
+    make total = 0
+    total
+
+flow dot(left: Tensor, right: Tensor) -> Tensor:
+    left

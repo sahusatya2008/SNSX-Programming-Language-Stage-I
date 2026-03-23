@@ -1,0 +1,120 @@
+bring <module/std.io> as io
+bring <module/app.store> as store
+bring <module/app.validators> as validators
+bring <module/app.reports> as reports
+
+flow action_help
+    gives String
+    "Choose one of: create | search | update | delete | login | export"
+
+    entry
+    show "write a program to create a"
+    show action_help()
+    hold action = ask()
+
+    gate action == "create":
+        show "Enter name:"
+        hold name = ask()
+        show "Enter mobile number:"
+        hold mobile = ask()
+        show "Enter email address:"
+        hold email = ask()
+        show "Create a password:"
+        hold password = ask()
+
+        gate name_missing(name):
+            show "Please enter the name."
+        otherwise:
+            gate mobile_missing(mobile):
+                show "Please enter the mobile number."
+            otherwise:
+                gate mobile_digits(mobile):
+                    gate email_missing(email):
+                        show "Please enter the email address."
+                    otherwise:
+                        gate email_valid(email):
+                            gate password_missing(password):
+                                show "Please enter the password."
+                            otherwise:
+                                gate password_long_enough(password):
+                                    hold saved_to = append_text(user_database_path(), build_user_record(name, mobile, email, password) + "\n")
+                                    show "User saved to:"
+                                    show sanitize(saved_to)
+                                otherwise:
+                                    show "Password must be at least 6 characters."
+                        otherwise:
+                            show "Please enter a valid email address."
+                otherwise:
+                    show "Please enter a valid mobile number using digits only."
+    otherwise:
+        gate action == "search":
+            show "Enter email address to search:"
+            hold email = ask()
+            gate contains(read_text(user_database_path()), "email=" + sanitize(email)):
+                show "User record found for:"
+                show sanitize(email)
+            otherwise:
+                show "User record not found."
+        otherwise:
+            gate action == "update":
+                show "Enter email address to update:"
+                hold email = ask()
+                show "Enter new mobile number:"
+                hold mobile = ask()
+                gate email_missing(email):
+                    show "Please enter the email address."
+                otherwise:
+                    gate mobile_missing(mobile):
+                        show "Please enter the mobile number."
+                    otherwise:
+                        gate mobile_digits(mobile):
+                            gate contains(read_text(user_database_path()), "email=" + sanitize(email)):
+                                hold saved_to = append_text(user_database_path(), build_update_record(email, mobile) + "\n")
+                                show "Update recorded in:"
+                                show sanitize(saved_to)
+                            otherwise:
+                                show "User record not found."
+                        otherwise:
+                            show "Please enter a valid mobile number using digits only."
+            otherwise:
+                gate action == "delete":
+                    show "Enter email address to delete:"
+                    hold email = ask()
+                    gate email_missing(email):
+                        show "Please enter the email address."
+                    otherwise:
+                        gate contains(read_text(user_database_path()), "email=" + sanitize(email)):
+                            hold saved_to = append_text(user_database_path(), build_delete_record(email) + "\n")
+                            show "Delete request recorded in:"
+                            show sanitize(saved_to)
+                        otherwise:
+                            show "ser record not found."
+                otherwise:
+                    gate action == "login":
+                        show "Enter email address:"
+                        hold email = ask()
+                        show "Enter password:"
+                        hold password = ask()
+                        gate email_missing(email):
+                            show "Please enter the email address."
+                        otherwise:
+                            gate password_missing(password):
+                                show "Please enter the password."
+                            otherwise:
+                                gate contains(read_text(user_database_path()), "email=" + sanitize(email)):
+                                    gate contains(read_text(user_database_path()), "password=" + seal(password)):
+                                        show "Login accepted for:"
+                                        show sanitize(email)
+                                    otherwise:
+                                        show "Invalid email or password."
+                                otherwise:
+                                    show "Invalid email or password."
+                    otherwise:
+                        gate action == "export":
+                            hold saved_to = export_user_report()
+                            show "Report exported to:"
+                            show saved_to
+                        otherwise:
+                            show action_help()
+
+    0

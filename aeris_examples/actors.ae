@@ -1,0 +1,25 @@
+module demo.actors;
+
+effect actor;
+
+type Msg = Ping(value: Int) | Stop;
+
+actor Echo() {
+    on Ping(value) => {
+        value + 1
+    }
+    on _ => {
+        0
+    }
+}
+
+fn main() -> Int !actor {
+    let worker = spawn(Echo);
+    emit(worker, Ping(41));
+    let processed = drain();
+    if processed == 1 {
+        0
+    } else {
+        1
+    }
+}

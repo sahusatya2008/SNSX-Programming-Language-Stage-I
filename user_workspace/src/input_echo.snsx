@@ -1,0 +1,14 @@
+bring <module/std.io> as io
+
+entry
+    show "write a program to take input"
+    show "Enter value:"
+    hold raw = ask()
+
+    gate raw == "":
+        show "Please enter a value."
+    otherwise:
+        show "Received:"
+        show sanitize(raw)
+
+    0

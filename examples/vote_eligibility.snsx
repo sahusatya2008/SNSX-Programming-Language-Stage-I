@@ -1,0 +1,19 @@
+bring <module/std.io> as io
+
+entry
+    show "Enter your age:"
+    hold raw_age = ask()
+    gate raw_age == "":
+        show "Please enter your age."
+    otherwise:
+        gate is_int(raw_age):
+            hold age = int(raw_age)
+
+            gate age >= 18:
+                show "You are eligible to vote."
+            otherwise:
+                show "You are not eligible to vote."
+        otherwise:
+            show "Please enter a valid numeric age."
+
+    0

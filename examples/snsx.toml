@@ -1,0 +1,19 @@
+[package]
+name = "snsx_examples"
+version = "0.1.0"
+entry = "hello.snsx"
+
+[permissions]
+fs = true
+net = false
+ai = true
+
+[dependencies]
+std = "builtin"
+"std.io" = "builtin"
+"std.ai" = "builtin"
+"std.db" = "builtin"
+"std.math" = "builtin"
+"std.design" = "builtin"
+"std.sentinel" = "builtin"
+"std.error" = "builtin"

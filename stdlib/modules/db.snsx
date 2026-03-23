@@ -1,0 +1,8 @@
+flow reset_store(path: String) -> String:
+    write_text(path, "")
+
+flow persist_text(path: String, text: String) -> String:
+    append_text(path, text)
+
+flow persist_line(path: String, line: String) -> String:
+    append_text(path, line + "\n")

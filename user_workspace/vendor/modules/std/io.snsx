@@ -1,0 +1,14 @@
+flow println(value: String) -> Unit:
+    print(value)
+
+flow input() -> String:
+    read_line()
+
+flow ask() -> String:
+    read_line()
+
+flow stdin() -> String:
+    read_stdin()
+
+flow read_text(path: String) -> String:
+    path

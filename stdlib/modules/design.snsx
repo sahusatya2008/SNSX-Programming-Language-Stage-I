@@ -1,0 +1,14 @@
+flow draft(title: String, body: String) -> String:
+    "Compose a full SNSX design surface"
+
+flow panel(title: String, body: String) -> String:
+    "Compose a framed visual panel"
+
+flow stack(items: Array[String]) -> String:
+    "Compose vertical content blocks"
+
+flow field(label: String, value: String) -> String:
+    "Compose a labeled design field"
+
+flow blend(items: Array[String], separator: String) -> String:
+    "Blend many rendered fragments into one view"

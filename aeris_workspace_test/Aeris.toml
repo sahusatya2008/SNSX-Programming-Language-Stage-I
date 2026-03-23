@@ -1,0 +1,9 @@
+[package]
+name = "aeris_workspace_test"
+version = "0.1.0"
+entry = "src/main.ae"
+
+[capabilities]
+default = ["Console"]
+
+[dependencies]

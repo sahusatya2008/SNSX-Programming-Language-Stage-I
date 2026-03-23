@@ -1,0 +1,13 @@
+[package]
+name = "snsx-vm"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+sha3.workspace = true
+snsx-ai-engine = { path = "../ai_engine" }
+snsx-compiler = { path = "../compiler" }
+snsx-runtime = { path = "../runtime" }
+snsx-stdlib = { path = "../stdlib" }
+

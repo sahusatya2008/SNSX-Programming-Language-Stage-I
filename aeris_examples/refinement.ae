@@ -1,0 +1,11 @@
+module demo.refinement;
+
+effect pure;
+
+fn divide(x: Int, y: Int where y != 0) -> Int !pure {
+    x / y
+}
+
+fn main() -> Int !pure {
+    divide(12, 3)
+}

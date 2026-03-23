@@ -1,0 +1,13 @@
+bring <module/std.io> as io
+
+flow user_report_path
+    gives String
+    "reports/write_a_program_to_create_a_data_export.txt"
+
+flow export_report_payload
+    gives String
+    "SNSX User Report\n" + read_text(user_database_path())
+
+flow export_user_report
+    gives String
+    write_text(user_report_path(), export_report_payload())

@@ -1,0 +1,18 @@
+[master] master runner started
+[master] workspace: /Users/drhacker/Documents/Programming Lang
+[master] language: aeris
+[master] mode: run
+[master] project: ./aeris_workspace_test
+[master] log file: /Users/drhacker/Documents/Programming Lang/logs/master-20260321-234932.log
+[master] running: cargo check --offline
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[master] running: cargo build -p aeris_cli --offline
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
+[master] initializing aeris project at ./aeris_workspace_test
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/aeris init ./aeris_workspace_test
+Initialized AERIS project at ./aeris_workspace_test
+[master] launching AERIS system in run mode
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/aeris run --manifest ./aeris_workspace_test/Aeris.toml
+Hello from AERIS
+exit: 0
+[master] master runner finished

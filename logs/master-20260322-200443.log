@@ -1,0 +1,15 @@
+[master] master runner started
+[master] workspace: /Users/drhacker/Documents/Programming Lang
+[master] language: snsx
+[master] mode: terminal
+[master] project: /Users/drhacker/Documents/Programming Lang/user_workspace
+[master] log file: /Users/drhacker/Documents/Programming Lang/logs/master-20260322-200443.log
+[master] running: cargo check --offline
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.25s
+[master] running: cargo build -p snsx --offline
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.10s
+[master] installing local snsx binary
+[master] running: bash /Users/drhacker/Documents/Programming Lang/install.sh
+error: package ID specification `cli` did not match any packages
+
+help: a package with a similar name exists: `clap`

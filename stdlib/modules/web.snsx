@@ -1,0 +1,2 @@
+flow render(node: String) -> String:
+    node

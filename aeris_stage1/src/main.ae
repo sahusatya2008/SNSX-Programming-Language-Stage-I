@@ -1,0 +1,9 @@
+module stage1.bootstrap;
+
+effect io;
+cap Console;
+
+fn main(console: Console) -> Int !io {
+    print(console, "AERIS stage1 source tree seeded.");
+    0
+}

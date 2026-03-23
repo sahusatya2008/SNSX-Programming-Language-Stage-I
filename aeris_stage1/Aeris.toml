@@ -1,0 +1,9 @@
+[package]
+name = "aeris_stage1"
+version = "0.1.0"
+entry = "src/main.ae"
+
+[capabilities]
+default = ["Console"]
+
+[dependencies]

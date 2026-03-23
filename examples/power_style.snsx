@@ -1,0 +1,25 @@
+bring <module/std.io> as io
+bring <module/std.ai> as ai
+bring <lib/std.design> as design
+bring <lib/std.sentinel> as sentry
+bring <package/std.error> as errors
+
+mind summarize
+    takes text: String
+    gives String
+    from "Summarize this text in one sentence"
+
+entry
+    hold raw = "SNSX now supports its own import style, guard rails, and design composition."
+    guard raw != "", "raw input cannot be blank"
+    hold seen = watch("raw", raw)
+    hold summary = seen |> summarize
+    guard len(summary) > 0, "summary must not be empty"
+    hold card = panel("Summary", summary)
+    hold meta = stack([field("shape", shape(summary)), field("seal", seal(summary))])
+    hold board = draft("SNSX Board", stack([card, meta]))
+    gate len(board) > 0:
+        show board
+    otherwise:
+        fail "board rendering failed"
+    0

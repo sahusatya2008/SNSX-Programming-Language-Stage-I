@@ -1,0 +1,8 @@
+flow seal(text: String) -> String:
+    "Produce a stable SNSX content seal"
+
+flow shape(value: String) -> String:
+    "Describe the structural shape of a value"
+
+flow watch(label: String, value: String) -> String:
+    "Trace a value without losing it"

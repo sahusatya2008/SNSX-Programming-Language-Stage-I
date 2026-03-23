@@ -1,0 +1,5 @@
+need std.io
+
+entry
+    show "starter 1774114159092"
+    0

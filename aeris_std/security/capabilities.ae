@@ -1,0 +1,10 @@
+module std.security.capabilities;
+
+effect pure;
+cap Console;
+cap FileSystem;
+cap Network;
+
+fn describe_cap(name: Text) -> Text !pure {
+    "cap:" + name
+}

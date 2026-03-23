@@ -1,0 +1,9 @@
+module std.concurrency.actor;
+
+effect actor;
+
+type Delivery = Delivered(count: Int) | Failed;
+
+fn drain_all() -> Int !actor {
+    drain()
+}

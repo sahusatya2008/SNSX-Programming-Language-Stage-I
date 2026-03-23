@@ -1,0 +1,17 @@
+[package]
+name = "snsx-ide"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+crossterm.workspace = true
+notify.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+snsx-ai-engine = { path = "../ai_engine" }
+snsx-compiler = { path = "../compiler" }
+snsx-runtime = { path = "../runtime" }
+snsx-stdlib = { path = "../stdlib" }
+snsx-vm = { path = "../vm" }
+toml.workspace = true

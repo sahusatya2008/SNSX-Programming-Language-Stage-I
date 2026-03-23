@@ -1,0 +1,23 @@
+[package]
+name = "aeris_cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "aeris"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+serde_json.workspace = true
+toml.workspace = true
+walkdir.workspace = true
+aeris_compiler = { path = "../aeris_compiler" }
+aeris_runtime = { path = "../aeris_runtime" }
+aeris_pkg = { path = "../aeris_pkg" }
+aeris_fmt = { path = "../aeris_fmt" }
+aeris_lint = { path = "../aeris_lint" }

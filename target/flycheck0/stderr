@@ -1,0 +1,401 @@
+   0.261598541s  INFO prepare_target{force=false package_id=aeris_cli v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_cli) target="aeris"}: cargo::core::compiler::fingerprint: fingerprint error for aeris_cli v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_cli)/Check { test: true }/TargetInner { name: "aeris", doc: true, ..: with_path("/Users/drhacker/Documents/Programming Lang/aeris_cli/src/main.rs", Edition2021) }
+   0.261627000s  INFO prepare_target{force=false package_id=aeris_cli v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_cli) target="aeris"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/aeris_cli-698390a95df49970/test-bin-aeris`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.290402166s  INFO prepare_target{force=false package_id=aeris_compiler v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_compiler) target="aeris_compiler"}: cargo::core::compiler::fingerprint: fingerprint error for aeris_compiler v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_compiler)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("aeris_compiler", ["lib"], "/Users/drhacker/Documents/Programming Lang/aeris_compiler/src/lib.rs", Edition2021) }
+   0.290622708s  INFO prepare_target{force=false package_id=aeris_compiler v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_compiler) target="aeris_compiler"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/aeris_compiler-f70a9de9c587916d/test-lib-aeris_compiler`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.291237833s  INFO prepare_target{force=false package_id=aeris_fmt v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_fmt) target="aeris_fmt"}: cargo::core::compiler::fingerprint: fingerprint error for aeris_fmt v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_fmt)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("aeris_fmt", ["lib"], "/Users/drhacker/Documents/Programming Lang/aeris_fmt/src/lib.rs", Edition2021) }
+   0.291248000s  INFO prepare_target{force=false package_id=aeris_fmt v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_fmt) target="aeris_fmt"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/aeris_fmt-f0b18bc35cb4b107/test-lib-aeris_fmt`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.292408250s  INFO prepare_target{force=false package_id=aeris_kernel_abi v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_kernel_abi) target="aeris_kernel_abi"}: cargo::core::compiler::fingerprint: fingerprint error for aeris_kernel_abi v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_kernel_abi)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("aeris_kernel_abi", ["lib"], "/Users/drhacker/Documents/Programming Lang/aeris_kernel_abi/src/lib.rs", Edition2021) }
+   0.292422291s  INFO prepare_target{force=false package_id=aeris_kernel_abi v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_kernel_abi) target="aeris_kernel_abi"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/aeris_kernel_abi-1e173d47096853a3/test-lib-aeris_kernel_abi`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.292815541s  INFO prepare_target{force=false package_id=aeris_lint v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_lint) target="aeris_lint"}: cargo::core::compiler::fingerprint: fingerprint error for aeris_lint v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_lint)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("aeris_lint", ["lib"], "/Users/drhacker/Documents/Programming Lang/aeris_lint/src/lib.rs", Edition2021) }
+   0.292825416s  INFO prepare_target{force=false package_id=aeris_lint v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_lint) target="aeris_lint"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/aeris_lint-422a542dc0023579/test-lib-aeris_lint`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.293438000s  INFO prepare_target{force=false package_id=aeris_pkg v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_pkg) target="aeris_pkg"}: cargo::core::compiler::fingerprint: fingerprint error for aeris_pkg v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_pkg)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("aeris_pkg", ["lib"], "/Users/drhacker/Documents/Programming Lang/aeris_pkg/src/lib.rs", Edition2021) }
+   0.293452958s  INFO prepare_target{force=false package_id=aeris_pkg v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_pkg) target="aeris_pkg"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/aeris_pkg-80b96e41edcfce6e/test-lib-aeris_pkg`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.294047333s  INFO prepare_target{force=false package_id=aeris_runtime v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_runtime) target="aeris_runtime"}: cargo::core::compiler::fingerprint: fingerprint error for aeris_runtime v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_runtime)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("aeris_runtime", ["lib"], "/Users/drhacker/Documents/Programming Lang/aeris_runtime/src/lib.rs", Edition2021) }
+   0.294058000s  INFO prepare_target{force=false package_id=aeris_runtime v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_runtime) target="aeris_runtime"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/aeris_runtime-6a13b39fa6a60d8f/test-lib-aeris_runtime`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.329411166s  INFO prepare_target{force=false package_id=snsx v0.1.0 (/Users/drhacker/Documents/Programming Lang/cli) target="snsx"}: cargo::core::compiler::fingerprint: fingerprint error for snsx v0.1.0 (/Users/drhacker/Documents/Programming Lang/cli)/Check { test: true }/TargetInner { name: "snsx", doc: true, ..: with_path("/Users/drhacker/Documents/Programming Lang/cli/src/main.rs", Edition2021) }
+   0.329428791s  INFO prepare_target{force=false package_id=snsx v0.1.0 (/Users/drhacker/Documents/Programming Lang/cli) target="snsx"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/snsx-5af5744b99a92a20/test-bin-snsx`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.330658833s  INFO prepare_target{force=false package_id=snsx-ai-engine v0.1.0 (/Users/drhacker/Documents/Programming Lang/ai_engine) target="snsx_ai_engine"}: cargo::core::compiler::fingerprint: fingerprint error for snsx-ai-engine v0.1.0 (/Users/drhacker/Documents/Programming Lang/ai_engine)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("snsx_ai_engine", ["lib"], "/Users/drhacker/Documents/Programming Lang/ai_engine/src/lib.rs", Edition2021) }
+   0.330669875s  INFO prepare_target{force=false package_id=snsx-ai-engine v0.1.0 (/Users/drhacker/Documents/Programming Lang/ai_engine) target="snsx_ai_engine"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/snsx-ai-engine-6050e1ebd89f5f12/test-lib-snsx_ai_engine`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.331204291s  INFO prepare_target{force=false package_id=snsx-compiler v0.1.0 (/Users/drhacker/Documents/Programming Lang/compiler) target="snsx_compiler"}: cargo::core::compiler::fingerprint: fingerprint error for snsx-compiler v0.1.0 (/Users/drhacker/Documents/Programming Lang/compiler)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("snsx_compiler", ["lib"], "/Users/drhacker/Documents/Programming Lang/compiler/src/lib.rs", Edition2021) }
+   0.331213666s  INFO prepare_target{force=false package_id=snsx-compiler v0.1.0 (/Users/drhacker/Documents/Programming Lang/compiler) target="snsx_compiler"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/snsx-compiler-fd712bf4cf05ecdc/test-lib-snsx_compiler`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.331700125s  INFO prepare_target{force=false package_id=snsx-distributed-engine v0.1.0 (/Users/drhacker/Documents/Programming Lang/distributed_engine) target="snsx_distributed_engine"}: cargo::core::compiler::fingerprint: fingerprint error for snsx-distributed-engine v0.1.0 (/Users/drhacker/Documents/Programming Lang/distributed_engine)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("snsx_distributed_engine", ["lib"], "/Users/drhacker/Documents/Programming Lang/distributed_engine/src/lib.rs", Edition2021) }
+   0.331709375s  INFO prepare_target{force=false package_id=snsx-distributed-engine v0.1.0 (/Users/drhacker/Documents/Programming Lang/distributed_engine) target="snsx_distributed_engine"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/snsx-distributed-engine-fae497c689809122/test-lib-snsx_distributed_engine`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.332219250s  INFO prepare_target{force=false package_id=snsx-ide v0.1.0 (/Users/drhacker/Documents/Programming Lang/ide) target="snsx_ide"}: cargo::core::compiler::fingerprint: fingerprint error for snsx-ide v0.1.0 (/Users/drhacker/Documents/Programming Lang/ide)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("snsx_ide", ["lib"], "/Users/drhacker/Documents/Programming Lang/ide/src/lib.rs", Edition2021) }
+   0.332228041s  INFO prepare_target{force=false package_id=snsx-ide v0.1.0 (/Users/drhacker/Documents/Programming Lang/ide) target="snsx_ide"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/snsx-ide-fd72f7a7220a4b31/test-lib-snsx_ide`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.333076916s  INFO prepare_target{force=false package_id=snsx-network-stack v0.1.0 (/Users/drhacker/Documents/Programming Lang/network_stack) target="snsx_network_stack"}: cargo::core::compiler::fingerprint: fingerprint error for snsx-network-stack v0.1.0 (/Users/drhacker/Documents/Programming Lang/network_stack)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("snsx_network_stack", ["lib"], "/Users/drhacker/Documents/Programming Lang/network_stack/src/lib.rs", Edition2021) }
+   0.333085791s  INFO prepare_target{force=false package_id=snsx-network-stack v0.1.0 (/Users/drhacker/Documents/Programming Lang/network_stack) target="snsx_network_stack"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/snsx-network-stack-d532ef415fb1f9c7/test-lib-snsx_network_stack`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.333838875s  INFO prepare_target{force=false package_id=snsx-runtime v0.1.0 (/Users/drhacker/Documents/Programming Lang/runtime) target="snsx_runtime"}: cargo::core::compiler::fingerprint: fingerprint error for snsx-runtime v0.1.0 (/Users/drhacker/Documents/Programming Lang/runtime)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("snsx_runtime", ["lib"], "/Users/drhacker/Documents/Programming Lang/runtime/src/lib.rs", Edition2021) }
+   0.333847083s  INFO prepare_target{force=false package_id=snsx-runtime v0.1.0 (/Users/drhacker/Documents/Programming Lang/runtime) target="snsx_runtime"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/snsx-runtime-1540a782e89cfd61/test-lib-snsx_runtime`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.334304458s  INFO prepare_target{force=false package_id=snsx-stdlib v0.1.0 (/Users/drhacker/Documents/Programming Lang/stdlib) target="snsx_stdlib"}: cargo::core::compiler::fingerprint: fingerprint error for snsx-stdlib v0.1.0 (/Users/drhacker/Documents/Programming Lang/stdlib)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("snsx_stdlib", ["lib"], "/Users/drhacker/Documents/Programming Lang/stdlib/src/lib.rs", Edition2021) }
+   0.334313166s  INFO prepare_target{force=false package_id=snsx-stdlib v0.1.0 (/Users/drhacker/Documents/Programming Lang/stdlib) target="snsx_stdlib"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/snsx-stdlib-1f1d0c73c94eeb73/test-lib-snsx_stdlib`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.334809958s  INFO prepare_target{force=false package_id=snsx-vm v0.1.0 (/Users/drhacker/Documents/Programming Lang/vm) target="snsx_vm"}: cargo::core::compiler::fingerprint: fingerprint error for snsx-vm v0.1.0 (/Users/drhacker/Documents/Programming Lang/vm)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("snsx_vm", ["lib"], "/Users/drhacker/Documents/Programming Lang/vm/src/lib.rs", Edition2021) }
+   0.334818333s  INFO prepare_target{force=false package_id=snsx-vm v0.1.0 (/Users/drhacker/Documents/Programming Lang/vm) target="snsx_vm"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/drhacker/Documents/Programming Lang/target/debug/.fingerprint/snsx-vm-88bdda327866e73e/test-lib-snsx_vm`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking snsx-distributed-engine v0.1.0 (/Users/drhacker/Documents/Programming Lang/distributed_engine)
+    Checking snsx-ide v0.1.0 (/Users/drhacker/Documents/Programming Lang/ide)
+    Checking snsx-network-stack v0.1.0 (/Users/drhacker/Documents/Programming Lang/network_stack)
+    Checking snsx-vm v0.1.0 (/Users/drhacker/Documents/Programming Lang/vm)
+    Checking aeris_cli v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_cli)
+    Checking snsx v0.1.0 (/Users/drhacker/Documents/Programming Lang/cli)
+    Checking aeris_pkg v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_pkg)
+    Checking snsx-stdlib v0.1.0 (/Users/drhacker/Documents/Programming Lang/stdlib)
+    Checking snsx-ai-engine v0.1.0 (/Users/drhacker/Documents/Programming Lang/ai_engine)
+    Checking aeris_fmt v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_fmt)
+    Checking aeris_lint v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_lint)
+    Checking snsx-runtime v0.1.0 (/Users/drhacker/Documents/Programming Lang/runtime)
+    Checking aeris_runtime v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_runtime)
+    Checking snsx-compiler v0.1.0 (/Users/drhacker/Documents/Programming Lang/compiler)
+    Checking aeris_compiler v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_compiler)
+    Checking aeris_kernel_abi v0.1.0 (/Users/drhacker/Documents/Programming Lang/aeris_kernel_abi)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.22s

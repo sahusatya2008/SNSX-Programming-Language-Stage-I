@@ -1,0 +1,2 @@
+flow rpc_call(method: String, payload: Bytes) -> Bytes:
+    payload

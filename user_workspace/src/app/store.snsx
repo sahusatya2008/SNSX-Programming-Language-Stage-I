@@ -1,0 +1,25 @@
+bring <module/std.io> as io
+
+flow user_database_path
+    gives String
+    "data/write_a_program_to_create_a_data.snsxdb"
+
+flow build_user_record
+    takes name: String, mobile: String, email: String, password: String
+    gives String
+    "action=create|status=active|name=" + sanitize(name) + "|mobile=" + sanitize(mobile) + "|email=" + sanitize(email) + "|password=" + seal(password)
+
+flow build_update_record
+    takes email: String, mobile: String
+    gives String
+    "action=update|email=" + sanitize(email) + "|mobile=" + sanitize(mobile)
+
+flow build_delete_record
+    takes email: String
+    gives String
+    "action=delete|email=" + sanitize(email)
+
+flow login_signature
+    takes email: String, password: String
+    gives String
+    "email=" + sanitize(email) + "|password=" + seal(password)

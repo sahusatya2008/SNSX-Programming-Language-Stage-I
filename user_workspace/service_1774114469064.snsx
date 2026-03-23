@@ -1,0 +1,18 @@
+need std.io
+
+flow validate_service_1774114469064
+    takes raw: String
+    gives String
+    guard raw != "", "input cannot be blank"
+    raw
+
+flow render_service_1774114469064
+    takes value: String
+    gives String
+    "service 1774114469064: " + value
+
+entry
+    hold raw = ask()
+    hold safe = validate_service_1774114469064(raw)
+    show render_service_1774114469064(safe)
+    0

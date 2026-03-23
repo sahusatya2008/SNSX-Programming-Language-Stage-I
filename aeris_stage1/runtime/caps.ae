@@ -1,0 +1,12 @@
+module stage1.runtime.caps;
+
+effect pure;
+cap Console;
+cap FileSystem;
+cap Network;
+
+type CapSpec = CapSpec(name: Text, linear: Bool);
+
+fn console_name() -> Text !pure {
+    "Console"
+}

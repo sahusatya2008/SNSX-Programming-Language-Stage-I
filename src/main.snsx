@@ -1,0 +1,10 @@
+bring <module/std.io> as io
+
+flow describe_request
+    gives String
+    "write a conditional statement demo program"
+
+entry
+    show "write a conditional statement demo program"
+    show describe_request()
+    0

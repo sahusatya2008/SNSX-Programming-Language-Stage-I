@@ -1,0 +1,8 @@
+flow guard(condition: Bool, message: String) -> Unit:
+    "Stop execution when a contract is broken"
+
+flow fail(message: String) -> Unit:
+    "Raise an explicit SNSX failure"
+
+flow repair(primary: String, fallback: String) -> String:
+    "Use a safe fallback when the primary value is blank"

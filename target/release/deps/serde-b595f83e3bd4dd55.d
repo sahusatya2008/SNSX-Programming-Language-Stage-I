@@ -1,0 +1,14 @@
+/Users/drhacker/Documents/Programming Lang/target/release/deps/serde-b595f83e3bd4dd55.d: /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/drhacker/Documents/Programming\ Lang/target/release/build/serde-d0e0f846a2857d53/out/private.rs
+
+/Users/drhacker/Documents/Programming Lang/target/release/deps/libserde-b595f83e3bd4dd55.rlib: /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/drhacker/Documents/Programming\ Lang/target/release/build/serde-d0e0f846a2857d53/out/private.rs
+
+/Users/drhacker/Documents/Programming Lang/target/release/deps/libserde-b595f83e3bd4dd55.rmeta: /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/drhacker/Documents/Programming\ Lang/target/release/build/serde-d0e0f846a2857d53/out/private.rs
+
+/Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/drhacker/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/drhacker/Documents/Programming\ Lang/target/release/build/serde-d0e0f846a2857d53/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/drhacker/Documents/Programming Lang/target/release/build/serde-d0e0f846a2857d53/out

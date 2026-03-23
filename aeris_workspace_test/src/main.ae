@@ -1,0 +1,9 @@
+module app.main;
+
+effect io;
+cap Console;
+
+fn main(console: Console) -> Int !io {
+    print(console, "Hello from AERIS");
+    0
+}

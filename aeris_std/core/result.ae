@@ -1,0 +1,9 @@
+module std.core.result;
+
+effect pure;
+
+type Result<T, E> = Ok(value: T) | Err(error: E);
+
+fn is_ok(flag: Bool) -> Bool !pure {
+    flag
+}

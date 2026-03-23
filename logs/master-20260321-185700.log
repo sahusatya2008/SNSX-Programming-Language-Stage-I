@@ -1,0 +1,27 @@
+[master] snsx master runner started
+[master] workspace: /Users/drhacker/Documents/Programming Lang
+[master] mode: studio
+[master] log file: /Users/drhacker/Documents/Programming Lang/logs/master-20260321-185700.log
+[master] running: cargo check --offline
+    Checking snsx-compiler v0.1.0 (/Users/drhacker/Documents/Programming Lang/compiler)
+    Checking snsx-vm v0.1.0 (/Users/drhacker/Documents/Programming Lang/vm)
+    Checking snsx-ide v0.1.0 (/Users/drhacker/Documents/Programming Lang/ide)
+    Checking snsx v0.1.0 (/Users/drhacker/Documents/Programming Lang/cli)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.39s
+[master] running: cargo build -p snsx --offline
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[master] running full SNSX smoke tests
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/snsx run --file /Users/drhacker/Documents/Programming Lang/examples/hello.snsx
+hello from snsx
+summary: Smart Neural Syntax eXtended is readable, safe, and AI-native.
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/snsx run --file /Users/drhacker/Documents/Programming Lang/examples/concurrency.snsx
+70
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/snsx run --file /Users/drhacker/Documents/Programming Lang/examples/tensor.snsx
+Tensor[2, 2]
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/snsx build --file /Users/drhacker/Documents/Programming Lang/examples/hello.snsx --target wasm
+Wrote /Users/drhacker/Documents/Programming Lang/examples/dist/hello.wat
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/snsx deploy --file /Users/drhacker/Documents/Programming Lang/examples/hello.snsx --cluster local
+Deployment bundle written to /Users/drhacker/Documents/Programming Lang/examples/dist/standalone.snsxp.json
+[master] launching user system in studio mode
+[master] launching interactive command: /Users/drhacker/Documents/Programming Lang/target/debug/snsx studio
+[master] snsx master runner finished

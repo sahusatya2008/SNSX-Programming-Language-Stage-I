@@ -1,0 +1,13 @@
+bring <module/std.io> as io
+bring <module/std.ai> as ai
+
+mind summarize
+    takes text: String
+    gives String
+    from "Summarize this text"
+
+entry
+    show "hello from snsx"
+    hold summary = "Smart Neural Syntax eXtended is readable, safe, and AI-native." |> summarize
+    show summary
+    0

@@ -1,0 +1,10 @@
+flow work
+    takes x: Int
+    gives Int
+    x * 10
+
+entry
+    hold task = launch work(7)
+    hold value = wait task
+    show value
+    0

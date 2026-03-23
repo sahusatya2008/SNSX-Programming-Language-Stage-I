@@ -1,0 +1,31 @@
+[master] master runner started
+[master] workspace: /Users/drhacker/Documents/Programming Lang
+[master] language: snsx
+[master] mode: web
+[master] project: /Users/drhacker/Documents/Programming Lang/user_workspace
+[master] log file: /Users/drhacker/Documents/Programming Lang/logs/master-20260322-104926.log
+[master] stopping stale process 15365 (/Users/drhacker/Documents/Programming Lang/target/debug/snsx)
+[master] running: cargo check --offline
+    Checking snsx-ai-engine v0.1.0 (/Users/drhacker/Documents/Programming Lang/ai_engine)
+    Checking snsx-vm v0.1.0 (/Users/drhacker/Documents/Programming Lang/vm)
+    Checking snsx-ide v0.1.0 (/Users/drhacker/Documents/Programming Lang/ide)
+    Checking snsx v0.1.0 (/Users/drhacker/Documents/Programming Lang/cli)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.11s
+[master] running: cargo build -p snsx --offline
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[master] running full SNSX smoke tests
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/snsx run --file /Users/drhacker/Documents/Programming Lang/examples/hello.snsx
+Error: Error [SNSX-SEC-002]: AI module imported without AI permission at 28..55
+  why: strict mode prevents model access unless the project explicitly allows AI execution.
+  fix: Set `[permissions].ai = true` in `snsx.toml`, or remove `bring <module/std.ai>`.
+Error [SNSX-SEC-012]: AI flow 'summarize' is declared without AI permission at 57..144
+  why: AI flows may send data into model execution paths, so strict mode requires the project to opt in explicitly.
+  fix: Set `[permissions].ai = true` in `snsx.toml`, or replace the AI flow with a local deterministic flow.
+Error [SNSX-SEC-033]: AI call 'summarize' is blocked by project policy at 196..273
+  why: strict mode stops AI execution when the project has not explicitly granted model access.
+  fix: Set `[permissions].ai = true` in `snsx.toml`, or replace the AI call.
+[master] hello example failed. attempting automatic recovery with cargo clean
+[master] running: cargo clean
+     Removed 20767 files, 1.3GiB total
+[master] running: /Users/drhacker/Documents/Programming Lang/target/debug/snsx run --file /Users/drhacker/Documents/Programming Lang/examples/hello.snsx
+./master.sh: line 34: /Users/drhacker/Documents/Programming Lang/target/debug/snsx: No such file or directory

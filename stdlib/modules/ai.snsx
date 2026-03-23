@@ -1,0 +1,2 @@
+mind summarize(text: String) -> String from "Summarize the input text"
+mind classify(text: String) -> String from "Classify the input"

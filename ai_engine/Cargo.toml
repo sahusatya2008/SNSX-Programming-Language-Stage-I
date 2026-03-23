@@ -1,0 +1,10 @@
+[package]
+name = "snsx-ai-engine"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+snsx-compiler = { path = "../compiler" }
+snsx-runtime = { path = "../runtime" }

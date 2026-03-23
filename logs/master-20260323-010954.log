@@ -1,0 +1,12 @@
+[master] master runner started
+[master] workspace: /Users/drhacker/Documents/Programming Lang
+[master] language: snsx
+[master] mode: web
+[master] project: /Users/drhacker/Documents/Programming Lang/user_workspace
+[master] log file: /Users/drhacker/Documents/Programming Lang/logs/master-20260323-010954.log
+[master] running: cargo check --offline
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.84s
+[master] running: cargo build -p snsx --offline
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.44s
+[master] launching user system in web studio mode
+[master] launching interactive command: /Users/drhacker/Documents/Programming Lang/target/debug/snsx start --mode web
