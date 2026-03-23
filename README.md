@@ -1,24 +1,24 @@
 <div align="center">
 
-# 🚀 SNSX + AERIS — Next-Generation Programming Language Ecosystem
+#  SNSX + AERIS — Next-Generation Programming Language Ecosystem
 
 **Smart Neural Syntax eXtended (SNSX)** & **Advanced Execution & Runtime Isolation System (AERIS)**
 
 ![Rust](https://img.shields.io/badge/Language-Rust-DEA584?style=for-the-badge&logo=rust&logoColor=white)
-![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge)
-![Stage](https://img.shields.io/badge/Stage-Bootstrap%20v0.1.0-green?style=for-the-badge)
+![SNSX](https://img.shields.io/badge/Language-SNSX-DEA584?style=for-the-badge&logo=rust&logoColor=white)
+![Stage](https://img.shields.io/badge/Stage-Bootstrap%20v1.1.0-green?style=for-the-badge)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
 
 ---
 
 **Developer:** Satya Narayan Sahu  
-**Structural Developer:** Tathoi Mondal
+**Structural Designer:** Tathoi Mondal
 
 ---
 
 </div>
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [1. Introduction](#1-introduction)
 - [2. System Overview](#2-system-overview)
@@ -75,12 +75,12 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │                    SNSX/AERIS Design Pillars                     │
 ├─────────────────────────────────────────────────────────────────┤
-│  🔒 Security      → Zero-trust, explicit capabilities           │
-│  🤖 AI-Native     → First-class prompt functions                │
-│  📖 Readability   → Intent-driven, ceremony-free syntax         │
-│  🎯 Multi-Target  → VM, LLVM, WASM, Native Assembly            │
-│  🔄 Concurrency   → Deterministic tasks and actors              │
-│  📦 Modularity    → Workspace-aware package management          │
+│   Security      → Zero-trust, explicit capabilities           │
+│   AI-Native     → First-class prompt functions                │
+│   Readability   → Intent-driven, ceremony-free syntax         │
+│   Multi-Target  → VM, LLVM, WASM, Native Assembly            │
+│   Concurrency   → Deterministic tasks and actors              │
+│   Modularity    → Workspace-aware package management          │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -2383,17 +2383,9 @@ flow my_function
 
 Copyright 2026 Satya Narayan Sahu, Tathoi Mondal
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Without prior intemation and application for making any changes 
+and making it on its own name and using it for any commerical use over the internet.
+Disobeying this request may cause legal actions under **Indian Copyright Act, 1957** and **IT Act, 2000**.
 
 ---
 
