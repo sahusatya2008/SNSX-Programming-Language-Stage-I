@@ -12,7 +12,7 @@
 ---
 
 **Developer:** Satya Narayan Sahu  
-**Structural Designer:** Tathoi Mondal
+**.:** .
 
 ---
 
@@ -2381,7 +2381,7 @@ flow my_function
 
 ## 24. License
 
-Copyright 2026 Satya Narayan Sahu, Tathoi Mondal
+Copyright 2026 Satya Narayan Sahu, .
 
 Without prior intemation and application for making any changes 
 and making it on its own name and using it for any commerical use over the internet.
@@ -2391,7 +2391,7 @@ Disobeying this request may cause legal actions under **Indian Copyright Act, 19
 
 <div align="center">
 
-**Built with ❤️ by Satya Narayan Sahu & Tathoi Mondal**
+**Built with ❤️ by Satya Narayan Sahu & .**
 
 *SNSX/AERIS — Where AI meets Systems Programming*
 
